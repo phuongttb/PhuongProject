@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameterization Test Suite">
+	<test name="Testing Parameterization">
+		<classes>
+			<class name="vn.tripi.testing.searching.ValidateLoginForm">
+				<methods>
+		
+					<include name="TC_01_ValidatePassword">
+						<parameter name='username' value="0988100942"></parameter>
+						<parameter name='password' value="123456"></parameter>		
+						<parameter name='expectedOutput' value="Mật khẩu không hợp lệ"></parameter>		
+					</include>
+			
+					<include name="TC_02_ValidateUsername">
+						<parameter name='username' value="012345"></parameter>
+						<parameter name='password' value="123456"></parameter>
+						<parameter name='expectedOutput' value="Tài khoản chưa được đăng ký tại hệ thống"></parameter>						
+					</include>
+					<include name="TC_03_Validate_Username_Empty">
+						<parameter name='username' value=""></parameter>
+						<parameter name='password' value="123456"></parameter>		
+						<parameter name='expectedOutput' value="Please fill out this field."></parameter>	
+					</include>
+					<include name="TC_04_Validate_Password_Empty">
+						<parameter name='username' value="0988100942"></parameter>
+						<parameter name='password' value=""></parameter>		
+						<parameter name='expectedOutput' value="Please fill out this field."></parameter>	
+					</include>
+			</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

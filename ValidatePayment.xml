@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameterization Test Suite">
+	<test name="Testing Parameterization">
+		<classes>
+			<class name="vn.tripi.testing.searching.ValidatePayment">
+				<methods>
+
+				<include name="TC_ValidatLetBlankCustomer">
+					</include>
+					<include name="TC_TC_ValidateVoucherCode">
+						<parameter name='vouchercode' value="ddddd"></parameter>		
+					</include>
+			
+					<include name="TC_WithoutSelectPaymentMethod">
+						<parameter name='lastname_adult' value="Tran"></parameter>
+						<parameter name='firstname_adult' value="Phuong"></parameter>
+						<parameter name='gender_adult' value="Nữ"></parameter>			
+						<parameter name='lastname_child' value="Nguyen"></parameter>	
+						<parameter name='firstname_child' value="Nguyen"></parameter>	
+						<parameter name='gender_child' value="Nữ"></parameter>	
+						<parameter name='day_child' value="12"></parameter>	
+						<parameter name='month_child' value="03"></parameter>	
+						<parameter name='year_child' value="2007"></parameter>	
+						<parameter name='lastname_infant' value="Tran"></parameter>	
+						<parameter name='firstname_infant' value="phuong"></parameter>	
+						<parameter name='gender_infant' value="Nữ"></parameter>	
+						<parameter name='day_infant' value="23"></parameter>	
+						<parameter name='month_infant' value="11"></parameter>	
+						<parameter name='year_infant' value="2017"></parameter>	
+						<parameter name='gender_contact' value="Bà"></parameter>		
+						<parameter name='lastname_contact' value="Phan Dinh"></parameter>
+						<parameter name='firstname_contact' value="Tu"></parameter>	
+						<parameter name='email_contact' value="phuong@gmail.com"></parameter>	
+						<parameter name='phone_contact' value="097759715"></parameter>		
+					</include>	
+	
+				 <!--
+					<include name="TC_ValidatePassengerAge">
+						<parameter name='day_child1' value="18"></parameter>	
+						<parameter name='month_child1' value="11"></parameter>	
+						<parameter name='year_child1' value="2016"></parameter>		
+					</include>	
+							-->						
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

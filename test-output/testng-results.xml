@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parameterization Test Suite" duration-ms="38793" started-at="2018-10-04T09:22:17Z" finished-at="2018-10-04T09:22:55Z">
+    <groups>
+    </groups>
+    <test name="Testing Parameterization" duration-ms="38793" started-at="2018-10-04T09:22:17Z" finished-at="2018-10-04T09:22:55Z">
+      <class name="vn.tripi.testing.searching.ValidateLoginForm">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:vn.tripi.testing.searching.ValidateLoginForm@45c8e616]" name="beforeClass" is-config="true" duration-ms="12395" started-at="2018-10-04T16:22:17Z" finished-at="2018-10-04T16:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_ValidatePassword(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vn.tripi.testing.searching.ValidateLoginForm@45c8e616]" name="TC_01_ValidatePassword" duration-ms="6610" started-at="2018-10-04T16:22:29Z" finished-at="2018-10-04T16:22:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0988100942]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mật khẩu không hợp lệ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_ValidatePassword -->
+        <test-method status="PASS" signature="TC_02_ValidateUsername(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vn.tripi.testing.searching.ValidateLoginForm@45c8e616]" name="TC_02_ValidateUsername" duration-ms="6478" started-at="2018-10-04T16:22:36Z" finished-at="2018-10-04T16:22:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[012345]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tài khoản chưa được đăng ký tại hệ thống]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_ValidateUsername -->
+        <test-method status="PASS" signature="TC_03_Validate_Username_Empty(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vn.tripi.testing.searching.ValidateLoginForm@45c8e616]" name="TC_03_Validate_Username_Empty" duration-ms="6056" started-at="2018-10-04T16:22:42Z" finished-at="2018-10-04T16:22:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out this field.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Validate_Username_Empty -->
+        <test-method status="PASS" signature="TC_04_Validate_Password_Empty(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vn.tripi.testing.searching.ValidateLoginForm@45c8e616]" name="TC_04_Validate_Password_Empty" duration-ms="5843" started-at="2018-10-04T16:22:48Z" finished-at="2018-10-04T16:22:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0988100942]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out this field.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Validate_Password_Empty -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:vn.tripi.testing.searching.ValidateLoginForm@45c8e616]" name="afterClass" is-config="true" duration-ms="1395" started-at="2018-10-04T16:22:54Z" finished-at="2018-10-04T16:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- vn.tripi.testing.searching.ValidateLoginForm -->
+    </test> <!-- Testing Parameterization -->
+  </suite> <!-- Parameterization Test Suite -->
+</testng-results>

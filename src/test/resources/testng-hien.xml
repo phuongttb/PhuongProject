@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test thread-count="5" name="Test">
+		<!-- <parameter name="from_airport" value="HAN" /> <parameter name="to_airport" 
+			value="PQC" /> <parameter name="from_date_add" value="3" /> <parameter name="to_date_add" 
+			value="5" /> <parameter name="adult_num" value="2" /> <parameter name="child_num" 
+			value="0" /> <parameter name="infant_num" value="0" /> -->
+
+		<!-- Testcase kiem tra ket qua tim kiem co day du ve cua 3 hang VNA, VJ, 
+			JS hay khong -->
+		<parameter name="from_airport_checkairlines" value="DAD" />
+		<parameter name="to_airport_checkairlines" value="SGN" />
+		<parameter name="from_date_checkairlines_add" value="4" />
+		<parameter name="to_date_checkairlines_add" value="7" />
+		<parameter name="adult_num_checkairlines" value="2" />
+		<parameter name="child_num_checkairlines" value="0" />
+		<parameter name="infant_num_checkairlines" value="0" />
+
+		<!-- Testcase kiem tra viec tien hanh book ve may bay co den duoc cong 
+			thanh toan hay khong -->
+		<parameter name="from_airport_book" value="DAD" />
+		<parameter name="to_airport_book" value="SGN" />
+		<parameter name="from_date_book_add" value="3" />
+		<parameter name="to_date_book_add" value="9" />
+		<parameter name="adult_num_book" value="2" />
+		<parameter name="child_num_book" value="0" />
+		<parameter name="infant_num_book" value="0" />
+
+		<!-- Testcase kiem tra chang bay khong co chuyen -->
+		<parameter name="from_airport_noflight" value="HPH" />
+		<parameter name="to_airport_noflight" value="HUI" />
+		<parameter name="from_date_noflight_add" value="3" />
+		<parameter name="to_date_noflight_add" value="5" />
+		<parameter name="adult_num_noflight" value="1" />
+		<parameter name="child_num_noflight" value="0" />
+		<parameter name="infant_num_noflight" value="0" />
+
+		<!-- Testcase Kiem tra thong tin chang bay cua ve co chinh xac hay khong 
+			(kiem tra tren 10 ve cua trang ket qua dau tien -->
+		<parameter name="from_airport_flightinfo" value="DAD" />
+		<parameter name="to_airport_flightinfo" value="SGN" />
+		<parameter name="from_date_flightinfo_add" value="3" />
+		<parameter name="to_date_flightinfo_add" value="5" />
+		<parameter name="adult_num_flightinfo" value="2" />
+		<parameter name="child_num_flightinfo" value="0" />
+		<parameter name="infant_num_flightinfo" value="0" />
+
+		<!-- Testcase Kiem tra thong tin ve may bay co chinh xac hay khong: Chang 
+			bay - Gio di/Gio den - Ngay bay - Gia - So nguoi - Hang bay sau khi chon 
+			ve -->
+		<!-- VietJet Air/ Jetstar Airways / Vietnam Airlines -->
+		<parameter name="from_airport_allInfor" value="CXR" />
+		<parameter name="to_airport_allInfor" value="HAN" />
+		<parameter name="from_date_allInfor_add" value="3" />
+		<parameter name="to_date_allInfor_add" value="6" />
+		<parameter name="adult_num_allInfor" value="1" />
+		<parameter name="child_num_allInfor" value="1" />
+		<parameter name="infant_num_allInfor" value="1" />
+		<parameter name="airlines_from_allInfor"
+			value="Jetstar Airways" />
+		<parameter name="airlines_to_allInfor" value="VietJet Air" />
+
+
+		<classes>
+			<class name="vn.tripi.testing.searching.FlightTestCase" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
