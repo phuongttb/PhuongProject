@@ -75,6 +75,8 @@ public class ValidateLoginForm extends BaseClass {
 		driver.findElement(By.id("password")).clear();
 		String nameMessage = getHTML5ValidationMessage(driver.findElement(By.xpath("//input[@id='username']")));
 		Assert.assertEquals(expectedOutput, nameMessage);
+		
+		//Done
 	}
 	
 	
